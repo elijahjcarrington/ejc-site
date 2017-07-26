@@ -1,0 +1,79 @@
+
+/*Global*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background: #0A0A0A;
+}
+
+#main {
+  position: absolute;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  margin: 0 auto;
+  background: #0A0A0A;
+  border-bottom: 1px solid #1E1E1E;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .row {
+  border: 1px solid red;
+  clear: both;
+  flex: 1 40%;
+  margin: 10px;
+}
+
+header .row .left {
+  float: left;
+}
+
+header .row .right {
+  float: right;
+}
+
+header .row .right nav {
+
+}
+
+header .row.right nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .row .right nav ul {
+  display: inline-flex;
+}
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/*Global*/
+
+
+/**/
+
+/*
+#050A14
+#141414
+#1E1E1E
+#0073FF
+#00E3CA
+#FFFFFF
+*/
