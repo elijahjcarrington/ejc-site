@@ -1,18 +1,57 @@
+/*Global*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: #515151;
+  font-size: 16px;
+  font-family: 'Plain-Light', sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+#main {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.col.box {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.col.third {
+  flex: 1 33%;
+}
+
 /*Fonts*/
 
 @font-face {
-    font-family: Plain-Light;
-    src: url(../font/Plain-Light.woff);
+  font-family: Plain-Light;
+  src: url(../font/Plain-Light.woff);
 }
 
 @font-face {
-    font-family: Plain-Thin;
-    src: url(../font/Plain-Thin.woff);
+  font-family: Plain-Thin;
+  src: url(../font/Plain-Thin.woff);
 }
 
 @font-face {
-    font-family: Plain-Bold;
-    src: url(../font/Plain-Bold.woff);
+  font-family: Plain-Bold;
+  src: url(../font/Plain-Bold.woff);
 }
 
 h1 {
@@ -55,6 +94,7 @@ span {
   line-height: 1.2rem;
 }
 
+
 /*Common*/
 
 .sml-upper {
@@ -73,22 +113,8 @@ span {
   color: white;
 }
 
-.fade {
-  
-}
+.fade {}
 
-/*Global*/
-
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Plain-Light', sans-serif;
-  font-size: 16px;
-}
-
-body {
-  background: #000;
-}
 
 /*Shadow*/
 
@@ -98,12 +124,6 @@ body {
   box-shadow: 0px 25px 45px -30px grey;
 }
 
-/*Main*/
-
-#main {
-  position: absolute;
-  margin: 0 auto;
-}
 
 /*Header*/
 
@@ -140,6 +160,7 @@ header nav ul li a:hover {
   color: #fff;
 }
 
+
 /*About*/
 
 #about {
@@ -161,7 +182,6 @@ header nav ul li a:hover {
   background-size: cover;
 }
 
-
 #about .content {
   margin: 0 14rem 7rem auto;
   padding: 2rem 3rem;
@@ -169,7 +189,6 @@ header nav ul li a:hover {
   text-align: left;
   align-items: baseline;
   background: #000;
-
 }
 
 #about .content span.sml-upper {
@@ -184,29 +203,54 @@ header nav ul li a:hover {
 }
 
 
+/*Method*/
+
+#method {
+  margin: 70px;
+  top: 70px;
+  position: relative;
+}
+
+#icons {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#icons .col.box {
+  margin: 70px;
+  flex-flow: row nowrap;
+}
+
+#icons .col.third {
+  display: flex;
+  height: 200px;
+  margin: 30px;
+}
+
+
+#icons .icon-box {
+  background: #1E1E1E;
+  height: 100%;
+  width: 200px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #method {
+    margin: 70px auto;
+  }
+  #icons .col.box {
+    flex-flow: row wrap;
+  }
+  #icons .col.third {
+    flex: 0 100%;
+    margin: 20px;
+  }
+
+  #icons .icon-box {
+    margin: 0 auto;
+  }
+}
 
 
 /**/
-
-
-/*
-#000
-#141414
-#1E1E1E
-#74777C
-#0073FF
-#00E3CA
-#FFFFFF
-
-border: 1px solid red;
-http://www.ouiwill.com/#/
-*/
-
-/*Images*/
-
-/*
-background-image: url(../img/Space_1.jpg);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-*/

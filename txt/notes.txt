@@ -1,0 +1,21 @@
+/*Sites*/
+
+http://www.ouiwill.com/#/
+
+
+/*Colors*/
+
+#000
+#141414
+#1E1E1E
+#74777C
+#0073FF
+#00E3CA
+#FFFFFF
+
+/*Images*/
+
+background-image: url(../img/Space_1.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
