@@ -55,6 +55,8 @@ span {
   line-height: 1.2rem;
 }
 
+/*Common*/
+
 .sml-upper {
   list-style: none;
   text-decoration: none;
@@ -69,6 +71,10 @@ span {
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: white;
+}
+
+.fade {
+  
 }
 
 /*Global*/
@@ -155,6 +161,7 @@ header nav ul li a:hover {
   background-size: cover;
 }
 
+
 #about .content {
   margin: 0 14rem 7rem auto;
   padding: 2rem 3rem;
@@ -202,6 +209,4 @@ background-image: url(../img/Space_1.jpg);
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
-
-https://www.flickr.com/photos/gsfc/31062912081/
 */
