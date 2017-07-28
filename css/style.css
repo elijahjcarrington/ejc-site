@@ -1,15 +1,15 @@
 /*Global*/
 
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
 html, body {
   padding: 0;
   margin: 0;
   color: #515151;
-  font-size: 16px;
-  font-family: 'Plain-Light', sans-serif;
-}
-
-body {
   background: #000;
+  font-size: 16px;
 }
 
 #main {
@@ -34,25 +34,24 @@ body {
 }
 
 .col.third {
-  flex: 1 33%;
+  flex: 0 33%;
+}
+
+.col.fourth {
+  flex: 0 25%;
+}
+
+.fade {}
+
+.section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: auto;
+  top: 70px;
 }
 
 /*Fonts*/
-
-@font-face {
-  font-family: Plain-Light;
-  src: url(../font/Plain-Light.woff);
-}
-
-@font-face {
-  font-family: Plain-Thin;
-  src: url(../font/Plain-Thin.woff);
-}
-
-@font-face {
-  font-family: Plain-Bold;
-  src: url(../font/Plain-Bold.woff);
-}
 
 h1 {
   font-size: 2.75rem;
@@ -94,9 +93,6 @@ span {
   line-height: 1.2rem;
 }
 
-
-/*Common*/
-
 .sml-upper {
   list-style: none;
   text-decoration: none;
@@ -107,14 +103,10 @@ span {
 }
 
 .lg-callout {
-  font-family: 'Plain-Thin';
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: white;
 }
-
-.fade {}
-
 
 /*Shadow*/
 
@@ -164,9 +156,7 @@ header nav ul li a:hover {
 /*About*/
 
 #about {
-  position: relative;
   height: 900px;
-  top: 70px;
 }
 
 #about .hero {
@@ -206,9 +196,16 @@ header nav ul li a:hover {
 /*Method*/
 
 #method {
+  background: white;
+  border: 1px solid white;
+}
+
+#method .container {
   margin: 70px;
-  top: 70px;
-  position: relative;
+}
+
+#method .title {
+  padding: 20px;
 }
 
 #icons {
@@ -217,38 +214,29 @@ header nav ul li a:hover {
 }
 
 #icons .col.box {
-  margin: 70px;
   flex-flow: row nowrap;
 }
 
-#icons .col.third {
+#icons .col.fourth {
   display: flex;
-  height: 200px;
-  margin: 30px;
+  margin: 20px;
 }
-
 
 #icons .icon-box {
-  background: #1E1E1E;
-  height: 100%;
-  width: 200px;
-  border-radius: 4px;
+  border-radius: 3px;
+  padding: 20px;
+  border: 1px solid #1E1E1E;
 }
 
-@media only screen and (max-width: 1200px) {
-  #method {
-    margin: 70px auto;
-  }
+@media only screen and (max-width: 1000px) {
   #icons .col.box {
     flex-flow: row wrap;
   }
-  #icons .col.third {
-    flex: 0 100%;
-    margin: 20px;
+  #icons .col.fourth {
+    flex: 1 25%;
   }
-
-  #icons .icon-box {
-    margin: 0 auto;
+  #method .title  {
+    padding: 20px;
   }
 }
 
